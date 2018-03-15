@@ -1,1 +1,18 @@
-nóis
+# = chave
+* = referencia
+
+
+Publicações {#cod_publicacao, autor, assunto, disponivel, palavra_chave, cod_gen*, cod_prat*, local}
+      cod_gen >> referencia genero
+      cod_prat >> referencia prateleira
+Colaborador {#cod_colab, nome, CPF, cod_pub*, data_emprestimo}
+      cod_pub >> referencia publicacao
+Reservas {cod_pub*,cod_cod_colab*}
+      cod_pub >> referencia publicacao
+      cod_colab >> referencia colaborador
+Devolucao{cod_pub*, cod_colab*, data}
+      cod_pub >> referencia publicacao
+      cod_colab >> referencia colaborador
+Genero{#cod_gen, nome}
+Prateleira {#cod_prat, descricao, cod_gen*}
+      cod_gen >> referencia genero
