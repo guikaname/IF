@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+    struct Cadastro
+    {
+    char nome[50];
+    char sexo[1];
+    char doenca[50];
+    int data_nasc[4];
+    };
+struct Cadastro paciente;
+    printf("\n ---------- Cadastro do paciente -----------\n\n\n");
+    printf("\n Nome do paciente: \n -");
+        fflush(stdin);
+        fgets(paciente.nome, 50, stdin);
+    printf("\n Sexo (M or F, or gay, or bi, or whaterver, alien, I don't know anymore...\n -");
+        fflush(stdin);
+        fgets(paciente.sexo, 50, stdin);
+    printf("\n ano de nascimento: \n -");
+        fflush(stdin);
+        scanf("%i",&paciente.data_nasc);
+    printf("\n Doenca: \n -");
+        fflush(stdin);
+        fgets(paciente.doenca, 50, stdin);
+    printf("-----------Cadastro completo------------\n");
+    printf("nome: -%s\n", paciente.nome);
+    printf("Sexo: -%s\n", paciente.sexo);
+        fflush(stdin);
+    printf("FAZ O CALCULO DA IDADE PFV %i", &paciente.data_nasc);
+    printf("\n doenca: -%s\n", paciente.doenca);
+
+
+return 0;
+}
