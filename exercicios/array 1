@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <string.h>
+
+
+void soma(int num[]);
+int main()
+{ int n[3], x;
+   for(x=0, x<3, x++){
+       printf("informe o numero da posição %i: "&x);
+       scanf("%i",&n[x])
+   }
+    soma(n);
+    media(n);
+return 0;
+}
+void soma(int num[]){
+    int a;
+    for (a=0,a<0,a++){
+    {
+               
+    }
+       a = x+y;
+        a = a+z;
+        printf("\n soma: %i",&a);
+}
+void media()
+{
+        a = x+y;
+        a = a+z;
+        a/3;
+        printf("\n media: %i",&a);
+}
+
